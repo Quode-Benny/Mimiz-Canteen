@@ -1,0 +1,10 @@
+node_modules/
+.env
+data/store.json
+data/store.json.tmp
+*.corrupt-*
+dist/
+
+data/mimiz.sqlite
+data/mimiz.sqlite-wal
+data/mimiz.sqlite-shm
