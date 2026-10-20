@@ -1,0 +1,17 @@
+{
+  "name": "@mimiz/shared",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test src/domain.test.ts src/registry.test.ts src/access-control.test.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "@types/node": "^22.15.0"
+  }
+}

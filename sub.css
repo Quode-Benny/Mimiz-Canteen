@@ -1,0 +1,225 @@
+/* Colors */
+:root {
+    --color-default: #212529;
+    --color-primary: #ed8906;
+    --color-secondary: #131316;
+  }
+  
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.logo img {
+    height: 50px;
+} 
+  .contact-info p {
+    margin: 0 10px;
+  }
+  
+  main {
+    text-align: center;
+  }
+  .banner {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(assets/img/others/jollof-rice.webp);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  margin: auto; 
+}
+
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 2.5em;
+  }
+  .banner p {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .buttons button {
+    font-size: 1.2em;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .buttons button {
+    font-size: 1.2em;
+  }
+}
+
+
+  
+  .banner h1 {
+    font-size: 4.0em;
+    margin-bottom: 5%;
+  }
+  .banner p {
+    font-size: 2.0em;
+  }
+  .buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  .buttons button:hover {
+    color: #fff;
+  }
+
+  .modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 0%; 
+    height: 0%; 
+    overflow: auto; 
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4); 
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 30%;
+  }
+
+  .modal-form {
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 90%;
+    overflow: auto;
+    background-color: rgb(223, 217, 217);
+    padding-top: 10px;
+    border-radius: 10px;
+    color: var(--color-secondary);
+  }
+  .modal-form h1 {
+    text-align: center;
+    color: var(--color-primary);
+  }
+  .modal-form .form-group {
+    margin: 15px 0;
+  }
+  .modal-form input[type="text"],
+.modal-form input[type="password"],
+.modal-form input[type="email"] {
+  width: 50%;
+  padding: 2px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.modal-form button[type="submit"] {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  padding: 5px 10px;
+  margin: 8px 3;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  border-radius: 10px;
+}
+.modal-form button[type="submit"]:hover {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+  
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+   
+  .social-login {
+    margin-top: 20px;
+  }
+  .social-btn {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  .facebook {
+    background-color: #3b5998;
+    color: #fff;
+  }
+  
+  .google {
+    background-color: #dd4b39;
+    color: #fff;
+  }
+.twitter {
+  background-color:#1da1f2;
+   color: #fff;
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+      width: 80%; 
+      margin: 10% auto; 
+    }
+  
+    .social-login {
+      margin-top: 10px;
+    }
+  
+    .social-btn {
+      padding: 8px 16px;
+      font-size: 1em;
+    }
+  }
+  
+
+
+  
+ 

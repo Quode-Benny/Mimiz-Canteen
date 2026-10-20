@@ -1,0 +1,22 @@
+{
+  "name": "mimiz-food-platform",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/web",
+    "packages/shared",
+    "packages/db"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @mimiz/web",
+    "build": "npm run build --workspace @mimiz/web",
+    "typecheck": "npm run typecheck --workspace @mimiz/web",
+    "dbGenerate": "npm run db:generate --workspace @mimiz/db",
+    "dbMigrate": "npm run db:migrate --workspace @mimiz/db",
+    "dbSeed": "npm run db:seed --workspace @mimiz/db",
+    "test": "npm test --workspace @mimiz/shared && npm test --workspace @mimiz/web"
+  },
+  "engines": {
+    "node": ">=20.9"
+  }
+}
